@@ -12,3 +12,5 @@ WINDOWS 8 y 8.1 : https://github.com/git-for-windows/git/releases/tag/v2.38.1.wi
 WINDOWS 10 y 11 : https://git-scm.com/install/windows 
 
 *El siguiente link es útil para comprender el paso a paso para la instalación e importación de archivos, recomendable de ver: https://youtu.be/eQMcIGVc8N0?si=qLZY3maJ0CBdvg-e
+
+<img width="816" height="1959" alt="image" src="https://github.com/user-attachments/assets/0d04a023-1162-4de2-aec2-50eca8912580" />
