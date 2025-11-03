@@ -10,3 +10,5 @@ A continuación pondré todos los links respectivos para cada version de windows
 WINDOWS 7 : https://github.com/git-for-windows/git/releases/tag/v2.33.0.windows.2
 WINDOWS 8 y 8.1 : https://github.com/git-for-windows/git/releases/tag/v2.38.1.windows.1
 WINDOWS 10 y 11 : https://git-scm.com/install/windows 
+
+*El siguiente link es útil para comprender el paso a paso para la instalación e importación de archivos, recomendable de ver: https://youtu.be/eQMcIGVc8N0?si=qLZY3maJ0CBdvg-e
