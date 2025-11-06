@@ -6,10 +6,10 @@
 
   <!-- Mermaid CDN -->
   <script type="module">
-    // Usamos la versión moderna de mermaid como módulo ESM
+    
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
     mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
-    // Para activar dark theme condicional, podrías detectar prefers-color-scheme
+   
   </script>
 
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -93,18 +93,5 @@ flowchart LR
     </div>
 
     <section style="margin-top:18px;line-height:1.5;color:#243b53;">
-      <strong>Cómo editar:</strong>
-      <ol>
-        <li>En tu editor (Codespace o GitHub web) abre este archivo <code>index.html</code>.</li>
-        <li>Busca el bloque que empieza con <code>%%{init:</code> y edita el texto del <code>flowchart</code> (nodos y flechas usan la sintaxis de Mermaid).</li>
-        <li>Guardar / Commit → GitHub Pages reconstruirá la página y verás el cambio en la URL pública.</li>
-      </ol>
-      <p><strong>Ejemplo rápido:</strong> para agregar "Topología Algebraica" como nodo conectado a "Análisis Complejo" añade una línea debajo de los nodos: <code>TopAlg["Topología Algebraica"]:::leaf</code> y una flecha <code>Complex --> TopAlg</code>.</p>
-    </section>
-  </main>
-
-  <footer>
-    ¿Querés que lo transforme en SVG o que añada botones para exportar PNG? Puedo agregar esa funcionalidad también.
-  </footer>
-</body>
+     
 </html>
