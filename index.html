@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Diagrama: Ramas del Análisis Matemático</title>
+
+  <!-- Mermaid CDN -->
+  <script type="module">
+    // Usamos la versión moderna de mermaid como módulo ESM
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
+    // Para activar dark theme condicional, podrías detectar prefers-color-scheme
+  </script>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body{
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      margin:0;
+      background: #f7f9fc;
+      color:#12263a;
+      display:flex;
+      flex-direction:column;
+      min-height:100vh;
+      align-items:center;
+      padding:32px;
+      box-sizing:border-box;
+    }
+    header{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    header h1{ margin:0; color:#0b3d91; font-size:1.8rem; }
+    header p{ margin:6px 0 0; color:#334155;}
+    .container{
+      width:100%;
+      max-width:1100px;
+      background:#fff;
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(15,23,42,0.08);
+      padding:22px;
+    }
+    /* mermaid container responsive */
+    .mermaid {
+      max-width:100%;
+      overflow:auto;
+      min-height:360px;
+    }
+
+    /* pequeño footer con instrucciones */
+    footer{
+      margin-top:16px;
+      font-size:0.9rem;
+      color:#475569;
+      text-align:center;
+    }
+    code { background:#eef2ff; padding:2px 6px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mapa: Ramas del Análisis Matemático</h1>
+    <p>Diagrama interactivo editable con <strong>Mermaid.js</strong>. Edita el bloque <code class="inline">%% Mermaid</code> dentro del HTML para modificar el esquema.</p>
+  </header>
+
+  <main class="container">
+    <!-- Diagrama Mermaid: edita este bloque para cambiar el esquema -->
+    <div class="mermaid">
+%%{init: {'theme':'neutral','flowchart': {'curve':'basis'}}}%%
+flowchart LR
+  subgraph ANALISIS["Análisis Matemático"]
+    direction TB
+    Real["Análisis Real"]:::core
+    Complex["Análisis Complejo"]:::core
+    Functional["Análisis Funcional"]:::core
+    Measure["Teoría de la Medida"]:::core
+    Harmonic["Análisis Armónico"]:::core
+    AnalyticNum["Teoría Analítica de Números"]:::core
+  end
+
+  Real -->|base| Complex
+  Real -->|integrales avanzadas| Measure
+  Complex -->|funciones meromorfas, zeta| AnalyticNum
+  Harmonic -->|Fourier / Mellin| AnalyticNum
+  Measure -->|L^p spaces| Functional
+  Functional -->|espectro / operadores| AnalyticNum
+  Complex -->|Cauchy & Residuos| Harmonic
+  Harmonic -->|transformadas| Functional
+
+  classDef core fill:#eaf2ff,stroke:#a6c8ff,color:#062a6a,stroke-width:1px;
+  classDef leaf fill:#fffef6,stroke:#ffd69e,color:#5a3b00;
+%%  
+    </div>
+
+    <section style="margin-top:18px;line-height:1.5;color:#243b53;">
+      <strong>Cómo editar:</strong>
+      <ol>
+        <li>En tu editor (Codespace o GitHub web) abre este archivo <code>index.html</code>.</li>
+        <li>Busca el bloque que empieza con <code>%%{init:</code> y edita el texto del <code>flowchart</code> (nodos y flechas usan la sintaxis de Mermaid).</li>
+        <li>Guardar / Commit → GitHub Pages reconstruirá la página y verás el cambio en la URL pública.</li>
+      </ol>
+      <p><strong>Ejemplo rápido:</strong> para agregar "Topología Algebraica" como nodo conectado a "Análisis Complejo" añade una línea debajo de los nodos: <code>TopAlg["Topología Algebraica"]:::leaf</code> y una flecha <code>Complex --> TopAlg</code>.</p>
+    </section>
+  </main>
+
+  <footer>
+    ¿Querés que lo transforme en SVG o que añada botones para exportar PNG? Puedo agregar esa funcionalidad también.
+  </footer>
+</body>
+</html>
