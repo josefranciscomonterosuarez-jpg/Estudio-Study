@@ -6,3 +6,4 @@ xlabel("x");
 ylabel("y");
 grid on;
 print -dpng "grafico.png";
+
