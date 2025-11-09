@@ -24,4 +24,6 @@ print("C:/Users/Cris/Desktop/trabajo/GRAFICOS_OCTAVE/grafico 2.png", "-dpng", "-
 
 
 $$GRAFICO$$
+
 <img width="1744" height="1308" alt="grafico 2" src="https://github.com/user-attachments/assets/b6c73a02-d0ce-4fd6-b0a8-6fc556ebfbc2" />
+
